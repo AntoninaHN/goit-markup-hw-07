@@ -525,7 +525,7 @@ a {
 /* ============Form========= */
 .footer-subscribe {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-basis: calc((100% - 30px) / 2);
 }
 
@@ -550,6 +550,7 @@ a {
   height: 50px;
   background: #2f303a;
   padding: 15px;
+  margin-right: 7px;
 }
 
 .email-subscription,
@@ -919,6 +920,135 @@ text {
 }
 
 /* ==================END OF STUDIO================= */
+/* =======OUR CLIENTS======= */
+.clients {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.clients-item {
+  flex-basis: calc((100% - 180px) / 6);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.clients-link {
+  color: #afb1b8;
+  display: flex;
+  width: 100%;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+
+.company-icon {
+  display: inline-block;
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid #2196f3;
+}
+
+/* ==============FOOTER============= */
+.footer {
+  background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
+  /* WebStudio */
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--background-color);
+  display: inline-block;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.logo-footer span {
+  /* WebStudio */
+  color: var(--accent-color);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address {
+  display: flex;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.email-foot-number {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 250ms var(--timing-function);
+}
+
+.email-foot-number:hover,
+.email-foot-number:focus {
+  color: var(--accent-color);
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.footer-address {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
 /* ===========PORTFOLIO=========== */
 .our-works {
   display: flex;
@@ -1006,133 +1136,5 @@ text {
 .works-link:focus .overlay {
   overflow: visible;
   transform: translateY(0%);
-}
-
-/* =======OUR CLIENTS======= */
-.clients {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
-
-.clients-list {
-  display: flex;
-  align-items: center;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.clients-item {
-  flex-basis: calc((100% - 180px) / 6);
-  margin-left: 30px;
-  margin-top: 30px;
-}
-
-.clients-link {
-  color: #afb1b8;
-  display: flex;
-  width: 100%;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  transition: color 250ms var(--timing-function);
-}
-
-.company-icon {
-  display: inline-block;
-  fill: currentColor;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-color);
-  border: 1px solid #2196f3;
-}
-
-/* ==============FOOTER============= */
-footer {
-  background: #2f303a;
-}
-
-.logo-footer {
-  /* WebStudio */
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--background-color);
-  display: inline-block;
-  margin-bottom: 20px;
-  font-style: normal;
-}
-
-.logo-footer span {
-  /* WebStudio */
-  color: var(--accent-color);
-  text-decoration: none;
-  font-style: normal;
-}
-
-.address {
-  display: flex;
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--background-color);
-  text-decoration: none;
-  font-style: normal;
-}
-
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.email-foot-number {
-  font-family: Roboto;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  transition: color 250ms var(--timing-function);
-}
-
-.email-foot-number:hover,
-.email-foot-number:focus {
-  color: var(--accent-color);
-}
-
-.box {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-basis: calc((100% - 30px) / 2);
-}
-
-.footer-address {
-  flex-basis: calc((100% - 30px) / 2);
-}
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 /*# sourceMappingURL=main.css.map */
