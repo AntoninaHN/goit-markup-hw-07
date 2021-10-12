@@ -23,7 +23,7 @@
   /* WebStudio */
   color: var(--accent-color);
   text-decoration: none;
-  font-style: normal;
+  font-style: 400;
 }
 
 .address {
@@ -65,9 +65,4 @@
 }
 .footer-address {
   flex-basis: calc((100% - 30px) / 2);
-}
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
 }
